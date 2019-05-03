@@ -1,0 +1,28 @@
+
+<br/>
+<div class="row">
+
+
+<div class="col-12">
+    <% @news.each do |news| %>
+  
+        <h3><%= news.title %></h3>
+
+        <h5><%= news.subtitle %></h5>
+        <p><%= news.published %></p>
+        <p><%= news.body %></p>
+        <p><%= link_to 'Show', news %></p>
+        <hr/>
+
+
+    <% end %>
+</div>
+
+
+
+
+</div>
+
+ <br/>
+
+<%= link_to 'Make News', new_news_path, :class  => "btn btn-lg btn-primary" %>
