@@ -9,6 +9,7 @@
         <h3><%= news.title.titleize %></h3>
 
         <h5 class="text-muted"><%= news.subtitle.titleize %></h5>
+        <%= image_tag news.cover_picture, :class => "img-fluid" %>
         <p><%= news.published %></p>
         <p><%= news.body %></p>
         <p><%= link_to 'Show', news %></p>
