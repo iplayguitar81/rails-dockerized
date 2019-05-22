@@ -7,11 +7,11 @@
     <% @news.each do |news| %>
   
 <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-1 order-lg-1 order-sm-1">
-            <%= image_tag news.cover_picture.variant( charcoal: ".10", border: "5%x5%", flop: true), :class => "img-fluid" %>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 order-1 order-lg-1 order-sm-1">
+            <%= image_tag news.cover_picture.variant( resize: "400x200", charcoal: ".10", border: "5%x5%", flop: true), :class => "img-fluid" %>
         </div>
 
-        <div class="col-lg-6 col-md-12  col-sm-12 col-12 order-2 order-lg-2 order-sm-2">
+        <div class="col-lg-8 col-md-12  col-sm-12 col-12 order-2 order-lg-2 order-sm-2">
             <span class=""><%= news.published.strftime("%B %d, %Y") %></span>
             <br>
             <br>
